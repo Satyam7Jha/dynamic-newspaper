@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="scripts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=sans"
+    />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/summernote-lite.min.css" />
+
+    <title>Add News</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="header-create-news">Add News</header>
+      <div id="select-page">
+        
+
+        <section id="change-add-page">
+          <select id="pages"></select>
+          <button id="Add-Page">Add Page</button>
+        </section>
+      </div style="background-color: red;">
+      <form id="add-news-form">
+        <div class="row">
+          <span style="display: flex; flex-direction: column">
+            <input
+              required
+              type="text"
+              name="title"
+              id="news-title"
+              class="top-level-input"
+              placeholder="News Title"
+            
+            />
+          
+            <input
+              required
+              type="text"
+              name="title"
+              id="news-image"
+              class="top-level-input"
+              placeholder="Image URL"
+            />
+          </span>
+
+          <div class="row">
+            <span> </span>
+            <span> </span>
+          </div>
+          <textarea required class="summernote"></textarea>
+        </div>
+        <script src="./css/summernote-lite.min.js"></script>
+        <script src="../components/scripts.js"></script>
+        <button style="margin-top: 10px" type="submit" id="create-news">
+          Add News
+        </button>
+      </form>
+
+      <div>
+        <h2>Page Title</h2>
+        <input id="edit-page-title" class="top-level-input" />
+      </div>
+
+      <section id="accordion-contianer">
+        <!-- <button class="accordion">Section 1</button>
+        <div class="panel">
+
+        </div> -->
+      </section>
+    </div>
+    <p id="min-news-warning">Please enter min 4 News per Page.</p>
+    <button id="submitPage" class="button-33" role="button">Submit News</button>
+  </body>
+</html>
